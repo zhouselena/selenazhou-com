@@ -1,0 +1,66 @@
+@use '/src/styles/variables.scss';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+  .nav-menu {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 3rem;
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+
+    .nav-link {
+      font-weight: 400;
+      font-size: 16px;
+      color: variables.$off-white;
+      text-decoration: none;
+      position: relative;
+      transition:
+        color 0.3s,
+        font-weight 0.3s;
+
+      &:hover {
+        color: variables.$baby-blue;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px;
+        width: 0;
+        background-color: variables.$baby-blue;
+        transition: width 0.3s ease-in-out;
+      }
+
+      &.active {
+        color: variables.$baby-blue;
+        font-weight: 600;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
