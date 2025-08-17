@@ -10,4 +10,10 @@ export default defineConfig({
       plugins: [autoprefixer()],
     },
   },
+  base: './',
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
 });
