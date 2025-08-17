@@ -10,7 +10,7 @@ export default defineConfig({
       plugins: [autoprefixer()],
     },
   },
-  base: '/selenazhou.com/',
+  base: './',
   resolve: {
     alias: {
       '@': '/src',
