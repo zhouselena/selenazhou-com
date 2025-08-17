@@ -1,23 +1,17 @@
-# React + TypeScript + Vite
+# selenazhou.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal site.
 
-Bootstrapped with `npm create vite@latest frontend-starter-custom -- --template react-ts`.
+## Setup
 
-Currently, two official plugins are available:
+Bootstrapped with `npm create vite@latest frontend-starter-custom -- --template react-ts`, with some edits from the earliest edition of my [custom frontend starterpack](https://github.com/zhouselena/frontend-starter-vite). 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Uses Vite, SASS, and Typescript.
 
-# To use in your project:
+## Deploy
 
-```bash
-#make sure you are in your project directory
-git remote add starter https://github.com/zhouselena/frontend-starter-vite.git
-git pull starter main --allow-unrelated-histories
-```
+Deployed from `gh-pages`. Run custom script `npm run deploy-full-run` from repository to update.
 
-```bash
-# also don't forget to run:
-npm install #to fetch all your package dependencies
-```
+## Notes
+
+I've never fully set up a React project myself before so this a werid Frankenstein between my React.js starterpack from CS52 and DALI CRUD template for tsx and vite. There's probably a lot of dependencies installed that aren't necessary and I haven't tried custom domain or deploying from Render yet so things may get messier.
