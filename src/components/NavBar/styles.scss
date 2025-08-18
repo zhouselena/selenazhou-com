@@ -1,20 +1,20 @@
 @use '/src/styles/variables.scss';
 
 .navbar {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0 2rem;
   position: relative;
+  padding: 0 0 2rem 0;
 
   .logo {
-    height: 50px;
+    height: 2rem;
   }
 
   .nav-menu {
     display: flex;
-    gap: 3rem;
+    column-gap: 3rem;
     list-style: none;
 
     li {
@@ -84,22 +84,24 @@
   }
 
   /* mobile menu */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 850px) {
     .nav-menu {
       position: absolute;
-      top: 70px;
+      top: 50px;
       right: 0;
       flex-direction: column;
       background-color: #111;
       width: max-content;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      padding: 1rem;
-      gap: 1rem;
-      transform: translateX(200%);
-      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
+      max-height: 0;
+      transition: 0.3s ease-in-out;
+      row-gap: 1rem;
+      padding: 0 1rem;
       &.open {
-        transform: translateX(0);
+        max-height: 500px; 
+        padding: 1rem;
       }
     }
 
