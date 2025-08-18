@@ -1,0 +1,94 @@
+@use '/src/styles/variables.scss';
+
+.pictextbuttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 4rem 0;
+
+  img {
+    width: 35%;
+    min-width: 300px;
+  }
+
+  .contents-textbuttons {
+    width: 47%;
+  }
+
+  h1 {
+    color: variables.$baby-blue;
+    font-size: 63px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .button-stack {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    padding: 1rem 0;
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    button {
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 13rem;
+    }
+
+    /* outline button */
+    button.outline {
+      background-color: transparent;
+      border: 3px solid variables.$off-white;
+      color: variables.$off-white;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    /* filled button */
+    button.filled {
+      background-color: variables.$off-white;
+      border: none;
+      color: variables.$font-blue;
+
+      &:hover {
+        color: variables.$tang-orange;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    img {
+      width: 80%;
+    }
+
+    .home-contents {
+      padding: 2rem 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .button-stack {
+      justify-content: center;
+    }
+  }
+}
