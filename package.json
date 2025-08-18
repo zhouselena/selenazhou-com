@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "deploy-full-run": "rm -rf dist && npm run build && npm run deploy"
+    "deploy-full-run": "rm -rf dist && npm run build && cp dist/index.html dist/404.html && npm run deploy"
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
