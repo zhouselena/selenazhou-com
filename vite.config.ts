@@ -19,7 +19,7 @@ export default defineConfig({
       plugins: [autoprefixer()],
     },
   },
-  base: './',
+  base: '/',
   resolve: {
     alias: {
       '@': '/src',
