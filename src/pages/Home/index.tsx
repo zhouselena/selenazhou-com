@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="homepage">
       <div className="pictextbuttons">
-        <img src={HomePicture} />
+        <img className="homepage-img" src={HomePicture} />
         <div className="contents-textbuttons">
           <h1>Hi! I'm Selena.</h1>
           <p>
