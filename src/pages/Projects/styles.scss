@@ -9,20 +9,30 @@
   width: 40%;
 }
 
+.contents-textbuttons.right {
+  text-align: end;
+}
+
+.button-stack.right {
+  justify-content: end;
+}
+
 @media screen and (max-width: 850px) {
   .screenshot {
     width: 90%;
   }
 
   .pictextbuttons {
-    padding: 0;
+    padding: 1rem 0;
   }
-}
 
-#right.contents-textbuttons {
-  text-align: end;
-}
+  .pictextbuttons {
+    .screenshot.right {
+      order: 2;
+    }
 
-#right.button-stack {
-  justify-content: end;
+    .contents-textbuttons.right {
+      order: 1;
+    }
+  }
 }

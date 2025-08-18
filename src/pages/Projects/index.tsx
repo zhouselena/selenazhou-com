@@ -29,14 +29,14 @@ function ProjectPage() {
           </div>
         </div>
         <div className="pictextbuttons">
-          <div className="contents-textbuttons" id="right">
+          <div className="contents-textbuttons right">
             <h1>WhisperChain+</h1>
             <p>
               WhisperChain+ is secure anonymous compliment delivery system. Users can sign up and
               send and receive messages in a securely encrypted environment.
               <b> Python</b>
             </p>
-            <div className="button-stack" id="right">
+            <div className="button-stack right">
               <a href="https://github.com/zhouselena/whisperchain" target="_blank">
                 <button className="outline">Github</button>
               </a>
@@ -72,7 +72,7 @@ function ProjectPage() {
           </div>
         </div>
         <div className="pictextbuttons">
-          <div className="contents-textbuttons" id="right">
+          <div className="contents-textbuttons right">
             <h1>AstroRun</h1>
             <p>
               Astro Runner is a 2D platformer game written on PyGame. It features a little astronaut
@@ -80,7 +80,7 @@ function ProjectPage() {
               original!
               <b> Python</b>
             </p>
-            <div className="button-stack" id="right">
+            <div className="button-stack right">
               <a href="https://github.com/zhouselena/astrorun" target="_blank">
                 <button className="outline">Github</button>
               </a>
