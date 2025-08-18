@@ -14,4 +14,4 @@ Deployed from `gh-pages`. Run custom script `npm run deploy-full-run` from repos
 
 ## Notes
 
-I've never fully set up a React project myself before so this a werid Frankenstein between my React.js starterpack from CS52 and DALI CRUD template for tsx and vite. There's probably a lot of dependencies installed that aren't necessary and I haven't tried custom domain or deploying from Render yet so things may get messier.
+I've never fully set up a React project myself before so this a werid Frankenstein between my React.js starterpack from CS52 and DALI CRUD template for tsx and vite. There's probably a lot of dependencies installed that aren't necessary and I haven't tried deploying from a different service like Render yet so things may get messier.
