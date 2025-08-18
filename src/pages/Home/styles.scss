@@ -73,12 +73,11 @@
   }
 
   @media screen and (max-width: 850px) {
-    img {
+    .homepage-img {
       width: 80%;
     }
 
     .contents-textbuttons {
-      padding: 2rem 0;
       width: 100%;
       text-align: center;
     }
