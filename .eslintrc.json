@@ -1,52 +1,35 @@
 {
+  "extends": ["airbnb-typescript/base", "plugin:@typescript-eslint/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "ecmaVersion": 2020,
-    "sourceType": "module"
+    "project": "./tsconfig.json"
   },
   "env": {
-    "browser": true,
+    "browser": false,
     "node": true,
     "es6": true,
     "jest": true
   },
-  "globals": {
-    "window": "readonly",
-    "document": "readonly",
-    "navigator": "readonly"
-  },
-  "plugins": ["@typescript-eslint", "import", "react-hooks", "react-refresh", "react-dom"],
-  "extends": ["airbnb-typescript/base", "plugin:@typescript-eslint/recommended"],
   "rules": {
-    // airbnb & ts custom rules
     "no-console": "off",
     "comma-dangle": "off",
     "linebreak-style": "off",
     "no-underscore-dangle": "off",
     "max-len": ["error", { "code": 200 }],
     "indent": ["error", 2, { "SwitchCase": 1 }],
+
     "import/extensions": "off",
     "import/prefer-default-export": "off",
+
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error", {}],
     "@typescript-eslint/no-empty-interface": "off",
     "no-unused-vars": 0,
+
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-ts-ignore": "off",
-
-    // React hooks plugin rules (inlined)
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-
-    // React refresh plugin rules (inlined, example safe defaults)
-    "react-refresh/only-export-components": "warn",
-
-    // React DOM plugin rules (inlined)
-    "react-dom/no-unknown-property": "error",
-    "react-dom/require-render-return": "error"
+    "@typescript-eslint/ban-ts-ignore": "off"
   },
   "settings": {
     "import/resolver": {
@@ -56,4 +39,5 @@
       }
     }
   },
+  "plugins": ["@typescript-eslint", "import", "react-hooks", "react-refresh", "react-dom"]
 }
