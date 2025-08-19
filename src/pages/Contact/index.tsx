@@ -11,7 +11,7 @@ const contactButtons = [
   { href: 'https://calendly.com/selena-zhou', imgSrc: IconCal, title: 'Calendly' },
   { href: 'https://github.com/zhouselena', imgSrc: IconGithub, title: 'Github' },
   { href: 'mailto:selena.yj.zhou@gmail.com', imgSrc: IconEmail, title: 'Email' },
-  { href: 'src/assets/resume_25x.pdf', imgSrc: IconPDF, title: 'Resume' },
+  { href: '/resume_25x.pdf', imgSrc: IconPDF, title: 'Resume' },
   { href: 'https://instagram.com/seldigicams/', imgSrc: IconIG, title: 'Photography' },
 ];
 
