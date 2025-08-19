@@ -28,14 +28,12 @@
     align-items: center;
     justify-content: center;
     max-width: calc(3 * 15rem + 10rem);
+    column-gap: 1.5rem;
+    row-gap: 1rem;
   }
 
   img {
     width: 25px;
-  }
-
-  a {
-    padding: 1rem 1.5rem;
   }
 
   button {
@@ -68,6 +66,10 @@
   }
 
   @media screen and (max-width: 850px) {
+    h1 {
+      font-size: 55px;
+    }
+
     .contact-content {
       width: 90%;
     }
