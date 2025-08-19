@@ -1,0 +1,79 @@
+@use '/src/styles/variables.scss';
+
+.experiences-page {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 4rem 0;
+  align-items: center;
+  justify-content: center;
+
+  .subtitle {
+    font-weight: 600;
+    color: variables.$tang-orange;
+  }
+
+  .timeline {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: variables.$baby-blue;
+    }
+  }
+
+  .timeline-entry {
+    width: 45%;
+    position: relative;
+    p {
+      padding: 0 1rem;
+    }
+
+    h1 {
+      padding: 1rem;
+      color: variables.$baby-blue;
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    &.left {
+      text-align: right;
+    }
+
+    &.right {
+      text-align: left;
+      margin-left: 55%;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .experiences-page {
+    padding: 0;
+
+    .timeline {
+      &::before {
+        width: 0;
+      }
+    }
+
+    .timeline-entry {
+      width: 100%;
+
+      &.left,
+      &.right {
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { ROUTES } from './utils/constants';
 import NavBar from '@/components/NavBar';
 import Home from '@/pages/Home';
 import ProjectPage from './pages/Projects';
+import ExperiencesPage from './pages/Experiences';
 import '@/App.scss';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Routes>
             <Route path={ROUTES.HOME} element={<Home />} />
             <Route path={ROUTES.PROJECTS} element={<ProjectPage />} />
-            <Route path={ROUTES.EXPERIENCE} element={<div />} />
+            <Route path={ROUTES.EXPERIENCE} element={<ExperiencesPage />} />
             <Route path={ROUTES.CONTACT} element={<div />} />
           </Routes>
         </main>
