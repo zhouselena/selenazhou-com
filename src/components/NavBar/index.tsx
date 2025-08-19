@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '@/assets/logo_sz.svg';
 import { ROUTES } from '@/utils/constants';
@@ -6,11 +6,25 @@ import './styles.scss';
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="navbar">
+    <div className="navbar" ref={menuRef}>
       <img src={logo} alt="Logo" className="logo" />
 
       <div className={`nav-menu ${isOpen ? 'open' : ''}`}>
