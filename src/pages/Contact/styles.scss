@@ -28,8 +28,7 @@
     align-items: center;
     justify-content: center;
     max-width: calc(3 * 15rem + 10rem);
-    column-gap: 1.5rem;
-    row-gap: 1rem;
+    gap: 2.5rem;
   }
 
   img {
