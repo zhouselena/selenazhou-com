@@ -1,0 +1,75 @@
+@use '/src/styles/variables.scss';
+
+.contact-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
+
+  .contact-content {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 65px;
+    color: variables.$baby-blue;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .contact-buttons {
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: calc(3 * 15rem + 10rem);
+  }
+
+  img {
+    width: 25px;
+  }
+
+  a {
+    padding: 1rem 1.5rem;
+  }
+
+  button {
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 15rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: variables.$off-white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .blue {
+    border: 2px solid variables.$baby-blue;
+  }
+
+  .orange {
+    border: 2px solid variables.$tang-orange;
+  }
+
+  @media screen and (max-width: 850px) {
+    .contact-content {
+      width: 90%;
+    }
+  }
+}
