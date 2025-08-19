@@ -25,8 +25,9 @@ function NavBar() {
 
   return (
     <div className="navbar" ref={menuRef}>
-      <img src={logo} alt="Logo" className="logo" />
-
+      <NavLink to={ROUTES.HOME} onClick={() => setIsOpen(false)}>
+        <img src={logo} alt="Logo" className="logo" />
+      </NavLink>
       <div className={`nav-menu ${isOpen ? 'open' : ''}`}>
         <li>
           <NavLink to={ROUTES.HOME} className="nav-link" onClick={() => setIsOpen(false)}>
