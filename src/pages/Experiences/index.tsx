@@ -30,13 +30,14 @@ const timelineData = [
   },
   {
     side: 'left',
-    heading: 'CS52 Teaching Assistant',
+    heading: 'CS Teaching Assistant',
     subtitle: 'Jan 2023 – Current | Hanover, NH',
     text: (
       <>
-        TA'd for COSC 001 (Intro to programming & computation) <b>Python</b>, COSC 010 (Problem
-        solving via object-oriented programming) <b>Java</b>, COSC 030 (Discrete Mathematics){' '}
-        <b>LaTeX</b>, COSC 052 (Full-stack development) <b>React.js, MongoDB</b>.
+        TA for Dartmouth CS Department. Courses TA'd: COSC 001 (Intro to programming & computation){' '}
+        <b>Python</b>, COSC 010 (Problem solving via object-oriented programming) <b>Java</b>, COSC
+        030 (Discrete Mathematics) <b>LaTeX</b>, COSC 052 (Full-stack development){' '}
+        <b>React.js, MongoDB</b>.
       </>
     ),
   },
