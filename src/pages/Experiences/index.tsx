@@ -24,7 +24,7 @@ const timelineData = [
         Tech lead on the Link~VT team. Built a web app that connects local citizens in Vermont who
         are out of work due to injury to personalized services and career coaches. Implemented
         databases, user accounts, resource table and search filters. Projected to reach 400+ users
-        in VT. <b>React.js, Directus</b>
+        in VT. <b>React.js, MongoDB</b>
       </>
     ),
   },
@@ -35,8 +35,8 @@ const timelineData = [
     text: (
       <>
         TA'd for COSC 001 (Intro to programming & computation) <b>Python</b>, COSC 010 (Problem
-        solving via object-oriented programming) <b>Java</b>, COSC 052 (Full-stack development){' '}
-        <b>React.js, MongoDB</b>.
+        solving via object-oriented programming) <b>Java</b>, COSC 030 (Discrete Mathematics){' '}
+        <b>LaTeX</b>, COSC 052 (Full-stack development) <b>React.js, MongoDB</b>.
       </>
     ),
   },
