@@ -12,7 +12,7 @@ const contactButtons = [
   { href: 'https://github.com/zhouselena', imgSrc: IconGithub, title: 'Github' },
   { href: 'mailto:selena.yj.zhou@gmail.com', imgSrc: IconEmail, title: 'Email' },
   { href: '/resume_25x.pdf', imgSrc: IconPDF, title: 'Resume' },
-  { href: 'https://instagram.com/seldigicams/', imgSrc: IconIG, title: 'Photography' },
+  { href: 'https://instagram.com/selsdigicams/', imgSrc: IconIG, title: 'Photography' },
 ];
 
 function ContactPage() {
